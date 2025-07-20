@@ -1,0 +1,141 @@
+.login-page {
+  background-image: url('/astronaut-dashboard.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 320px; /* Smaller width */
+  padding: 20px;
+}
+
+.website-title {
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+  color: #f7f6f0; /* Gold color */
+  font-size: 28px;
+  margin: 20px 0 0 20px; /* Top and left margin */
+  text-shadow: 0 0 10px rgb(243, 241, 235), 
+               0 0 20px rgba(255, 165, 0, 0.5);
+  letter-spacing: 3px;
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  font-weight: 700;
+  align-self: flex-start; /* Align to left */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+}
+
+.website-title:hover {
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.9), 
+               0 0 25px rgba(255, 165, 0, 0.7);
+  transform: scale(1.05);
+}
+
+.login-card {
+  background: rgba(15, 23, 42, 0.85); /* Dark blue space-like color */
+  border-radius: 12px;
+  padding: 25px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+.login-title {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.login-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.login-input:focus {
+  border-color: #8f6bff;
+  box-shadow: 0 0 0 2px rgba(143, 107, 255, 0.3);
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 13px;
+}
+
+.remember-me {
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.remember-me input {
+  margin-right: 6px;
+  accent-color: #8f6bff;
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: #b8a1ff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.forgot-password:hover {
+  color: #d4c4ff;
+  text-decoration: underline;
+}
+
+.login-button {
+  background: linear-gradient(to right, #6b4eff, #8f6bff);
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background: linear-gradient(to right, #7d5cff, #9d7bff);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(107, 78, 255, 0.4);
+}

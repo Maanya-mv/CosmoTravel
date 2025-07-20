@@ -1,0 +1,115 @@
+/* General Body and Container Styles - from your original CSS */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #000010, #0b0c10);
+  color: #ffffff;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: relative;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6); /* Slightly more transparent */
+  backdrop-filter: blur(8px); /* Slightly less blur for a softer look */
+  border-bottom: 1px solid rgba(79, 70, 229, 0.4); /* Tailwind's indigo-500/40 */
+  padding: 16px 16px; /* py-4 px-4 equivalent */
+  display: flex; /* Make it a flex container */
+  justify-content: center; /* Center items horizontally */
+}
+
+.navbar-links {
+  display: flex; /* Make this a flex container for the buttons */
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line on small screens */
+  justify-content: center; /* Center the buttons within this container */
+  max-width: 1280px; /* Equivalent to max-w-7xl from Tailwind, if you want a max width */
+  margin-left: auto;
+  margin-right: auto;
+  /* Removed 'gap' here as we'll use margin on the buttons */
+}
+
+/* NavButton Styles */
+.nav-button {
+  /* Existing padding for the button's internal content */
+  padding: 8px 20px; /* px-5 py-2 equivalent */
+
+  /* *** ADDED MARGIN FOR EXTERNAL SPACING *** */
+  margin: 0 10px; /* 10px margin on left and right for separation */
+  /* You can adjust '10px' to a larger value like '15px' or '20px' if needed */
+
+  border-radius: 9999px; /* rounded-full equivalent */
+  font-weight: 600; /* font-semibold equivalent */
+  transition: all 0.2s ease-in-out; /* transition-all duration-1000 equivalent for faster transitions */
+  transform: scale(1); /* Initial scale for transform hover:scale-105 */
+  outline: none; /* focus:outline-none */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1.125rem; /* text-lg equivalent */
+  letter-spacing: 0.05em; /* tracking-wide equivalent */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* shadow-lg equivalent */
+  font-family: 'Orbitron', sans-serif; /* Add Orbitron or your desired sci-fi font */
+
+  /* Default state styles (hover:bg-black/90 border border-white/20) */
+  background-color: rgba(0, 0, 0, 0.7); /* bg-black/70 */
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* border-white/20 */
+}
+
+.nav-button:hover {
+  transform: scale(1.05); /* hover:scale-105 equivalent */
+  background-color: rgba(0, 0, 0, 0.9); /* hover:bg-black/90 */
+  cursor: pointer;
+}
+
+.nav-button:focus {
+  box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.5); /* focus:ring-2 focus:ring-cyan-400 equivalent */
+}
+
+/* Active NavButton State */
+.nav-button.active {
+  background-image: linear-gradient(to right, #ec4899, #9333ea); /* bg-gradient-to-r from-pink-500 to-purple-600 */
+  color: white;
+  border: none; /* Remove border when active */
+}
+
+/* Main Content Styles */
+.main-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1280px; /* max-w-7xl equivalent */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px 16px; /* py-8 px-4 equivalent */
+}
+
+/* Spaceship Image Styles - from your original JSX, translated to CSS */
+.fixed {
+  position: fixed;
+}
+
+.bottom-10 {
+  bottom: 40px; /* 10 * 4px = 40px */
+}
+
+.right-10 {
+  right: 40px; /* 10 * 4px = 40px */
+}
+
+.w-32 {
+  width: 128px; /* 32 * 4px = 128px */
+}
